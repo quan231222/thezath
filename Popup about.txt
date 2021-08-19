@@ -1,0 +1,20 @@
+<!-- popup -->
+<div class='popup'>
+    <div class='popup_about'>
+          <p class='popup_w'>PetShop<br><br><br>
+          Welcome to PetShop!<br><br>
+      </p>
+          <form>
+          <div class='clearfix'>
+               <input class='about_no' type="button" value="Khách">
+              <a href='admin.html' id='about_botton'>Quản lý</a> 
+          </div>
+        </form>
+        <div id="popup_downs">
+        	<div class="">
+        		<span></span>
+        		<p></p>
+        	</div>
+        </div>
+    </div>
+</div> 

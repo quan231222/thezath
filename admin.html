@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <title> Admin </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <script type="text/javascript" src="vendor/bootstrap.js"></script>
+  <script type="text/javascript" src="1.js"></script>
+  <link rel="Shortcut icon" href="Logo.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/font-awesome.css">
+  <link rel="stylesheet" href="1.css">
+  <!-- MD Boostrap 5-->
+  <!-- Font Awesome -->
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  rel="stylesheet"
+  />
+  <!-- Google Fonts -->
+  <link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+  />
+  <!-- MDB -->
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css"
+  rel="stylesheet"
+  />
+
+</head>
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+
+</style>
+<body >
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">☰</a>
+  <a href="#"><i class="fa fa-user"></i> Admin</a>
+  <a href="#"><img src="unnamed.png" alt="" style="border-radius: 50%;width: 35px;height: 35px"> Minh Nghia</a>
+  <a href="index.html">Trang chủ</a>
+  <a href="#">Thống kê</a>
+  <a href="#">Doanh thu</a>
+  <a href="#">Thành viên</a>
+  <a href="Quanlysanpham.html">Quản lý sản phẩm</a>
+</div>
+
+
+  
+ <div class="header">
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <button class="openbtn" onclick="openNav()">☰</button>  
+  <a class="navbar-brand" href="#">
+    <img src="Logo.png" alt="logogido" style="width:40px;height: 100">
+  </a>
+  
+
+  <ul class="navbar-nav mr-auto">
+  <form class="form-inline" action="/action_page.php">
+     <a class="nav-link" href="index.html" style="color: white; padding-right: 50px;"><i class="fa fa-fw fa-home "></i>TRANG CHỦ</a>
+  </form>
+  </ul>
+  <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+         <a class="nav-link" href="#"><i class="fas fa-envelope" style="color: white"></i></a>
+      </li>
+      <li class="nav-item">
+         <a class="nav-link" href="#"><i class="fas fa-bell" style="color: white"></i></a>
+      </li>
+    </ul>
+</nav>
+  </div>  
+
+
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card text-white bg-primary">
+      <div class="card-body">
+        <h5 class="card-title">Thống kê</h5>
+        <p class="card-text">Thống kê danh mục các mặt hàng</p>
+        <a href="#" class="btn btn-primary">Chi tiết <i class="fas fa-arrow-circle-right"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card text-white bg-success">
+      <div class="card-body">
+        <h5 class="card-title">Doanh thu</h5>
+        <p class="card-text">Doanh thu theo từng tháng, từng quý, từng năm</p>
+        <a href="#" class="btn btn-success">Chi tiết <i class="fas fa-arrow-circle-right"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card text-white bg-warning">
+      <div class="card-body">
+        <h5 class="card-title">Thành viên</h5>
+        <p class="card-text">Danh sách thành viên đã đăng kí </p>
+        <a href="#" class="btn btn-warning">Chi tiết <i class="fas fa-arrow-circle-right"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+
+</body>
+</html>
